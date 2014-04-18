@@ -1,0 +1,2 @@
+pysrcds
+git+git://github.com/McLeopold/PythonSkills.git
