@@ -195,7 +195,7 @@ class GoonPugParser(object):
             self.cts = set()
             pattern = (r'.*L(?P<ip>\d+_\d+_\d+_\d+)_'
                        r'(?P<port>\d+)_(?P<time>\d+)_000.log')
-            m = re.match(pattern, event.filename)
+            m = re.match(pattern, str(event.filename))
             if m:
                 # TODO: If we support anything besides pugs this shouldn't be
                 # reset
